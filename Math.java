@@ -13,6 +13,7 @@ Math.toDegrees(x);
 Math.toRadians(x);
 Math.random();                         
 (int)(Math.random() * n);  
+Math.gcd(a, b);
         
 
         System.out.println(base + " raised to the power of " + exponent + " is: " + result);
