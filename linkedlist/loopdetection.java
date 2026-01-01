@@ -49,6 +49,8 @@ public class LoopDetection {
 
 */
 
+//     Time - O(n)  Space - O(1)
+
 import java.util.Scanner;
 
 class Node {
