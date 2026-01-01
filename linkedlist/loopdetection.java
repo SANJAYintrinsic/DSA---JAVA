@@ -13,7 +13,7 @@ class Node {
     }
 }
 
-public class linearlinkedlist {
+public class loopdetection {
 
     // insert at end
     static Node insertAtEnd(Node head, int data) {
