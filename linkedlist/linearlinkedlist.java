@@ -1,3 +1,6 @@
+
+Time O( n^2 )     Space  O( n )
+
 import java.util.Scanner;
 
 class Node {
