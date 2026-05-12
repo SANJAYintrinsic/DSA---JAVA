@@ -13,7 +13,7 @@ public class arrbigone {
             arr[i]=sc.nextInt();
         }
 
-        int largest=arr[0];    // Time complexity O(N)
+        int largest=arr[0];     // Time complexity O(N)
         int Slargest=-1;
         for(int i=1;i<n;i++){
             if(arr[i]>largest){
@@ -24,7 +24,6 @@ public class arrbigone {
                 Slargest=arr[i];
             }
         }
-
         System.out.print("Largest element in array : "+largest);
         System.out.print("\n"+"Seocnd Largest element in array : "+Slargest);
     }
