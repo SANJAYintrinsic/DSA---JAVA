@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.*;
 
-class arrbigone{
+class arrbigone{            //    T - O(N)   S - O(N)
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
