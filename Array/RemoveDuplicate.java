@@ -1,25 +1,24 @@
 import java.util.*;
 
-class RemoveDuplicates {
+class Array{
     public static void main(String[] args) {
+        int[] arr={8,4,2,5,6,1,8,9,6,4,2};
+        int n=arr.length;
 
-        int[] arr = {1,1,2,2,3,4,4,5};
+        //  T.C - O(N)  S.C - O(N)
+        
+        HashSet<Integer> hs=new HashSet<Integer>();  
 
-        int n = arr.length;
+        // LinkedHashSet<Integer> set=new LinkedHashSet<>();
+        // original order of array unique elements
 
-        int j = 0;
-
-        for(int i = 1; i < n; i++) {
-
-            if(arr[i] != arr[j]) {
-                j++;
-                arr[j] = arr[i];
-            }
+        for(int i=0;i<n;i++){
+            hs.add(arr[i]);
         }
 
-        // Print unique elements
-        for(int i = 0; i <= j; i++) {
-            System.out.print(arr[i] + " ");
+        for(int value:hs){
+        System.out.print(value+" ");
         }
+
     }
 }
