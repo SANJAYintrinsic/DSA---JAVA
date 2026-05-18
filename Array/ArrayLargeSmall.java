@@ -15,7 +15,7 @@ class arrbigone{            //    T - O(N)   S - O(N)
         }
 
         int largest=arr[0];
-        int Slargest=Integer.MAX_VALUE;
+        int Slargest=Integer.MIN_VALUE;
         for(int i=1;i<n;i++){
             if(arr[i]>largest){
                 Slargest=largest;
@@ -27,7 +27,7 @@ class arrbigone{            //    T - O(N)   S - O(N)
         }
 
         int Smallest=arr[0];
-        int SSmallest=Integer.MIN_VALUE;
+        int SSmallest=Integer.MAX_VALUE;
         for(int i=1;i<n;i++){
             if(arr[i]<Smallest){
                 SSmallest=Smallest;
