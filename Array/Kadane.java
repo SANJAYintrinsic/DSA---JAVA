@@ -6,6 +6,8 @@ public class KadanesAlgorithm {
         System.out.println("Maximum Subarray Sum = " + maxSum);
     }
 
+    //  T- O(N) , S- O(1)
+
     public static int kadane(int[] arr) {
         int maxSoFar = arr[0];   // Stores the maximum sum found so far
         int currentSum = arr[0]; // Stores the current subarray sum
