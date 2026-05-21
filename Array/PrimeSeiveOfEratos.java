@@ -1,5 +1,6 @@
 import java.util.*;
-
+                                 // time - O(n log log n) 
+                                 // space - O(n)
 public class Main {
     public static void sieve(int n) {
 
