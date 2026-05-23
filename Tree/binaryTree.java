@@ -7,6 +7,13 @@ class Node{
     }
 }
 
+/*
+Preorder	   Root Left Right
+Inorder	       Left Root Right
+Postorder	   Left Right Root
+Level Order	   Level by Level
+*/
+
 class binarytree{
     Node root=null;
     void order(Node node){
