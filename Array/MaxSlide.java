@@ -1,5 +1,16 @@
 import java.util.*;
 
+/*
+offerFirst() insert
+offerLast()
+pollFirst() remove
+pollLast()
+peekFirst() - 1st element
+peekLast() - last element
+deque.isEmpty
+deque.size()
+*/
+
 public class SlidingWindowMaximum {
 
     // Function to find maximum in each sliding window
