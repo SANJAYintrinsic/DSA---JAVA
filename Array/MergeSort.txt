@@ -1,0 +1,7 @@
+merge sort -  O(nlogn)
+
+-divide and conquer
+-recursively
+
+-brake the arrays into halves(recursively) - into individuals
+-sorted individuals recursively - merge one by one.
