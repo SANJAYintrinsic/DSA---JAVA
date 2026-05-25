@@ -1,0 +1,27 @@
+class - blueprint to create objects.
+
+object - instance of a class.
+
+encapsulation - private variables -(getter , setter - methods)
+
+inheritence(extends) - parent,child....(one class acquires properties of other).
+
+polymorphism - many forms
+a)compile time (Method overloading)-
+  same method name wiht different parameters.
+
+b)runtime polymorphism (Method Overriding)-
+  child changes parent class methods.
+
+abstraction -
+hides implementation details and show only functionality.
+(abstract class , interface)
+
+Constructor - special method to initialize objects.
+this- current object.
+super- parent class oject.
+final - restrict
+static - belongs to class not object
+
+
+
