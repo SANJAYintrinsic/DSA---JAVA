@@ -1,0 +1,8 @@
+Heap:-
+-binary tree data structure - satisfy heap property
+
+-implement - priority queue
+
+-min heap - root smaller - child bigger
+-max heap - root bigger  - child smaller.
+
