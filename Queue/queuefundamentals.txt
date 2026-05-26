@@ -1,0 +1,17 @@
+Queue :-
+
+-FIFO
+-enqueue/dequeue
+-two ends
+
+ Operation  Description        
+ ---------  ------------------ 
+ enqueue()  Insert element     
+ dequeue()  Remove element     
+ peek()     Get front element  
+ isEmpty()  Check queue empty  
+ size()     Number of elements 
+
+queue 2    3   4
+      front   back
+delete at front
