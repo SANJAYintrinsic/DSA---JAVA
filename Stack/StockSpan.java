@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.*; 
+
+                       //  time and space  -  O(n)
 
 class stockspan{
 
