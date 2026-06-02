@@ -1,4 +1,4 @@
-initially => front,rear= -1
+initially => front=0,rear= -1
 
 Index   0 1 2 3 4 5
 values  0 1 2 3 4 5
