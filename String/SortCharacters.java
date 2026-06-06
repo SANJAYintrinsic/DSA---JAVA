@@ -1,19 +1,15 @@
-import java.util.Arrays;
+import java.util.*;
 
-public class SortStringCharacters {
-    public static void main(String[] args) {
-        String str = "programming";
+class Sortchar{
+    public static void main(String[] args){
+        String str="All is Well";
+        str=str.toLowerCase().replace(" ","");
 
-        // Convert string to character array
-        char[] chars = str.toCharArray();
+        char[] ch=str.toCharArray();
 
-        // Sort the array
-        Arrays.sort(chars);
+        Arrays.sort(ch);
 
-        // Convert back to string
-        String sortedString = new String(chars);
-
-        System.out.println("Original String: " + str);
-        System.out.println("Sorted String: " + sortedString);
+        String sort=new String(ch);
+        System.out.print(sort);
     }
 }
