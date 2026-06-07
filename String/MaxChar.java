@@ -4,6 +4,9 @@ class Maxchar{
     public static void main(String[] args){
         String str="All is Well";
         str=str.toLowerCase();
+
+        // LinkedHashMap - Same String Order
+        
         HashMap<Character,Integer> map=new HashMap<>();
         for(char ch:str.toCharArray()){
             if(ch!=' '){
