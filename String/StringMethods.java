@@ -4,7 +4,7 @@ String str = "Hello";
 
 String str = new String("Hello");  //Creates a new object in HEAP MEMORY.
 
-In Java, single quotes (' ') are used for a char, while double quotes (" ") are used for a String.
+// In Java, single quotes (' ') are used for a char, while double quotes (" ") are used for a String.
 
 char ch = 'A';      // char (single character)
 String str = "A";   // String
