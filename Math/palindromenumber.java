@@ -1,24 +1,27 @@
-class GFG {
+import java.util.Scanner;
 
-    static boolean isPalindrome(int n) {
-        int reverse = 0;
-        
-        int temp = Math.abs(n);
-        while (temp != 0) {
-            reverse = (reverse * 10) + (temp % 10);
-            temp = temp / 10;
-        }
-        
-        return (reverse == Math.abs(n));
-    }
-
+public class Numpd {
     public static void main(String[] args) {
-        int n = 12321;
-        if (isPalindrome(n) == true) {
-            System.out.println("True");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int original = num;
+        int reverse = 0;
+
+        while (num > 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num /= 10;
         }
-        else {
-            System.out.println("False");
+
+        if (original == reverse) {
+            System.out.println("It is a Palindrome");
+        } else {
+            System.out.println("Not a Palindrome");
         }
+
+        sc.close();
     }
 }
