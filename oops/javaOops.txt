@@ -17,7 +17,16 @@ abstraction -
 hides implementation details and show only functionality.
 (abstract class , interface)
 
+
 Constructor - special method to initialize objects.
+A constructor is a special method used to initialize objects when they are created.
+
+Constructor name must be the same as the class name.
+It does not have a return type (not even void).
+It is called automatically when an object is created.
+
+
+
 this- current object.
 super- parent class oject.
 final - restrict
