@@ -23,5 +23,15 @@ super- parent class oject.
 final - restrict
 static - belongs to class not object
 
+A Thread is the smallest unit of execution within a process.
+Chrome browser = Process
+Each tab running independently = Thread
 
+Multithreading is the ability to execute multiple threads concurrently.
+
+Benefits
+Better CPU utilization
+Faster execution
+Improved responsiveness
+Parallel task execution
 
