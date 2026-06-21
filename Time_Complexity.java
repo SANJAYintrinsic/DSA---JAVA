@@ -18,6 +18,13 @@ class Example {
     }
 }
 
+O(1) - constant
+for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 5; j++) {
+       System.out.println(i + " " + j);            
+        }
+
+
 O(n) — Linear Time
 Two Separate Loops → O(n)
 class Example {
@@ -47,8 +54,8 @@ O(n²) — Quadratic Time
 Nested Loop Example
 class Example {
     public static void main(String[] args) {
-        for(int i=0; i<5; i++) {
-            for(int j=0; j<5; j++) {
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<n; j++) {
                 System.out.println(i + " " + j);
             }
         }
