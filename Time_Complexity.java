@@ -45,18 +45,17 @@ for(int i=1;i<n;i*=2)  -  O(n)
     }
 }
 
+
+
 O(n²) — Quadratic Time
 Nested Loop Example
 class Example {
     public static void main(String[] args) {
-
         for(int i=0; i<5; i++) {
             for(int j=0; j<5; j++) {
                 System.out.println(i + " " + j);
             }
         }
-    }
-}
 Three Loops But Not O(n³) - O(n²)
 for(int i=0;i<n;i++)
 {
@@ -68,12 +67,16 @@ for(int i=0;i<n;i++)
     }
 } 100 is constant.
 
+
+    
 Three Nested Loops
 for(...)
    for(...)
       for(...)
 → O(n³)
 
+    
+    
 O(log n) — Binary Search
 Multiplying Instead of Adding - O(log n)
 for(int i=1; i<n; i=i*2)
@@ -84,9 +87,12 @@ for(int i=1; i<n; i*=3)
 {
 }
 
+
+
 O(n log n) - Merge Sort
 Dividing array → log n
 Merging arrays → n
+
 Outer Linear, Inner Logarithmic - O(n log n)
 for(int i=0; i<n; i++)
 {
@@ -94,6 +100,7 @@ for(int i=0; i<n; i++)
     {
     }
 }
+
 While Inside While - O(n log n)
 int i=1;
 while(i<n)
@@ -105,6 +112,8 @@ while(i<n)
     }
     i++;
 }
+
+
 
 Square Root Loop  -  O(√n)
 for(int i=1; i*i<n; i++)
