@@ -13,9 +13,7 @@ how much extra memory a program uses.
 
 O(1) — Constant Time
 class Example {
-    public static void main(String[] args) {
         int[] arr = {10,20,30,40};
-
         System.out.println(arr[2]);
     }
 }
@@ -23,14 +21,11 @@ class Example {
 O(n) — Linear Time
 Two Separate Loops → O(n)
 class Example {
-    public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
-
         for(int i=0; i<arr.length; i++) {
             System.out.println(arr[i]);
         }
-    }
-}
+
 Linear Search
 | Case         | Situation                 | Complexity |
 | ------------ | ------------------------- | ---------- |
@@ -44,6 +39,7 @@ for(int i=1;i<n;i*=2)  -  O(n)
     {
     }
 }
+for(int i=0;i<n or i<n/2 or i<n*n;i++)  for all n - O(n)
 
 
 
