@@ -26,8 +26,8 @@ public class SlidingWindowMaximum {
 
             // Remove smaller elements from back
             while (!deque.isEmpty() &&
-                    nums[deque.peekLast()] <= nums[i]) {
-
+                    nums[deque.peekLast()] <= nums[i]) {  // new B - Remove prev
+                                                          // new smaller - add next
                 deque.pollLast();
             }
 
