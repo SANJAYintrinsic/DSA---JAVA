@@ -13,7 +13,7 @@ public class Main {
 
             if (prime[i]) {
 
-                for (int j = i * i; j <= n; j += i) {
+                for (int j = i * i; j <= n; j += i) {  // every multiple of i as non-prime.
                     prime[j] = false;
                 }
             }
