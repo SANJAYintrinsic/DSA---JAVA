@@ -1,33 +1,35 @@
-public class Main {
-    public static void main(String[] args) {
-        int[] arr = {10, 15, 22, 33, 40, 55, 68};
+import java.util.*;
 
-        int evenSum = 0, evenCount = 0;
-        int oddSum = 0, oddCount = 0;
+class evenodd{
+    public static void main(String[] args){
+        int[] arr={1,2,3,4,5};
 
-        System.out.print("Even numbers: ");
-        for (int num : arr) {
-            if (num % 2 == 0) {
-                System.out.print(num + " ");
-                evenSum += num;
-                evenCount++;
+        int evencount=0,evennum=0;
+        int oddcount=0,oddnum=0;
+
+        System.out.print("Sequence : ");
+
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                System.out.print(arr[i]+" ");
+                evennum+=arr[i];
+                evencount++;
             }
         }
 
-        System.out.print("\nOdd numbers: ");
-        for (int num : arr) {
-            if (num % 2 != 0) {
-                System.out.print(num + " ");
-                oddSum += num;
-                oddCount++;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2!=0){
+                System.out.print(arr[i]+" ");
+                oddnum+=arr[i];
+                oddcount++;
             }
         }
 
-        // Calculate averages
-        double evenAverage = (evenCount > 0) ? (double) evenSum / evenCount : 0;
-        double oddAverage = (oddCount > 0) ? (double) oddSum / oddCount : 0;
+        double evenavg= (evencount>0) ? (double) evennum/evencount : 0;
+        double oddavg=  (oddcount>0) ? (double) oddnum/oddcount : 0;
 
-        System.out.println("\n\nAverage of Even Numbers: " + evenAverage);
-        System.out.println("Average of Odd Numbers: " + oddAverage);
+        System.out.println();
+        System.out.println("EvenAVG : "+evenavg);
+        System.out.print("OddAVG : "+oddavg);
     }
 }
