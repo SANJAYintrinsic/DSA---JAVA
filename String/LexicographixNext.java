@@ -1,29 +1,34 @@
-import java.util.*;
+import java.util.Scanner;
 
-class Lexi{
+public class Wordcount {
     public static void main(String[] args) {
-        String str="All is Well";
-        StringBuilder sb=new StringBuilder();
-        for(int i=0;i<str.length();i++){
-            char ch=str.charAt(i);
+        Scanner sc = new Scanner(System.in);
 
-            if(ch>='a' && ch<='y'){
-                sb.append((char)(ch+1));
-            }
-            else if(ch=='z'){
-                sb.append('a');
-            }
-            else if(ch>='A' && ch<='Y'){
-                sb.append((char)(ch+1));
-            }
-            else if(ch=='Z'){
-                sb.append('A');
-            }
-            else{
-                sb.append(ch);
-            }
+        String str = sc.nextLine();
+        int shift = sc.nextInt();
+
+        if (shift == 0) {
+            System.out.println("Invalid Input");
+            return;
         }
 
-        System.out.print(sb);
+        StringBuilder result = new StringBuilder();
+
+        for (char ch : str.toCharArray()) {
+
+            if (ch >= 'a' && ch <= 'z') {
+                ch = (char) ('a' + (ch - 'a' + shift) % 26);
+            }
+            else if (ch >= 'A' && ch <= 'Z') {
+                ch = (char) ('A' + (ch - 'A' + shift) % 26);
+            }
+            else if (ch >= '0' && ch <= '9') {
+                ch = (char) ('0' + (ch - '0' + shift) % 10);
+            }
+
+            result.append(ch);
+        }
+
+        System.out.println(result);
     }
 }
