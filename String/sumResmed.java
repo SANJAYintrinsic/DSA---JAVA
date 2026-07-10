@@ -2,23 +2,25 @@ import java.util.Scanner;
 
 public class Main {
 
-    static long total = 0;
+    static int total = 0;
 
-    static void solve(String s, int index, long sum) {
+    static void solve(String s, int index, int sum) {
 
-        // If all digits are used, add this partition's sum
+        // Base case
         if (index == s.length()) {
             total += sum;
             return;
         }
 
-        // Form numbers of different lengths
+        int number = 0;
+
+        // Form numbers from index to i
         for (int i = index; i < s.length(); i++) {
 
-            // Built-in function to convert substring to number
-            long num = Long.parseLong(s.substring(index, i + 1));
+            // Build the number digit by digit
+            number = number * 10 + (s.charAt(i) - '0');
 
-            solve(s, i + 1, sum + num);
+            solve(s, i + 1, sum + number);
         }
     }
 
