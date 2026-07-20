@@ -16,13 +16,13 @@ class Wordcount{
             }
         }
 
-        /*for(int i=0;i<row;i++){
+        for(int i=0;i<row;i++){
             for(int j=i+1;j<col;j++){
                 int temp=matrix[i][j];
                 matrix[i][j]=matrix[j][i];
                 matrix[j][i]=temp;
             }
-        }*/
+        }
         
         int[][] rotate=new int[col][row];
         for(int i=0;i<row;i++){
