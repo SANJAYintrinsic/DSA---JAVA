@@ -1,7 +1,5 @@
 import java.util.*;
 
-// System.out.printf("%.5f",oddavg);
-
 class Wordcount{
 
     public static void main(String[] args){
