@@ -1,22 +1,24 @@
-import java.util.Arrays;
+import java.util.*;
 
-public class MissingNumber {
+public class sumarr {
     public static void main(String[] args) {
 
-        int[] arr = {4, 2, 1, 5};
+        int[] arr = {2,1,5,4,7,9};
 
         Arrays.sort(arr);
 
         int expected = 1;
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != expected) {
-                System.out.println("Missing Number = " + expected);
-                return;
-            }
-            expected++;
-        }
 
-        System.out.println("Missing Number = " + expected);
+            while (arr[i] > expected) {
+                System.out.print(expected + " ");
+                expected++;
+            }
+
+            if (arr[i] == expected) {
+                expected++;
+            }
+        }
     }
 }
